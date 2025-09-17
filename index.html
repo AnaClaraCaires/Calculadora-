@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/action.js" defer></script>
+</head>
+<body>
+
+    <div class="calculadora">
+        <!--dessabilita o input, para que nao possa digitar nada-->
+        <input type="text" class="tela" id="i_tela" disabled>
+
+        <div class="botoes">
+
+            <div class="row">
+                <button class="btt big equal" onclick="limpar_tela()">C</button>
+                <button class="btt small equal" onclick="apagar()">CE</button>
+                <button class="btt small op" onclick="add_operador('/')">&divide;</button>
+            </div>
+
+            <div class="row">
+            <button class="btt small" onclick="add_numero(7)">7</button>
+            <button class="btt small" onclick="add_numero(8)">8</button>
+            <button class="btt small" onclick="add_numero(9)">9</button>
+            <button class="btt small op" onclick="add_operador('*')">&times;</button>
+            </div>
+            <div class="row">
+            <button class="btt small" onclick="add_numero(4)">4</button>
+            <button class="btt small" onclick="add_numero(5)">5</button>
+            <button class="btt small" onclick="add_numero(6)">6</button>
+            <button class="btt small op" onclick="add_operador('-')">-</button>
+            </div>
+            <div class="row">
+            <button class="btt small" onclick="add_numero(1)">1</button>
+            <button class="btt small" onclick="add_numero(2)">2</button>
+            <button class="btt small" onclick="add_numero(3)">3</button>
+            <button class="btt small op" onclick="add_operador('+')">+</button>
+            </div>
+            <div class="row">
+            <button class="btt small" onclick="add_numero(0)">0</button>
+            <button class="btt small" onclick="add_pontos('.')">.</button>
+            <button class="btt big op" onclick="calcular()">=</button>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
